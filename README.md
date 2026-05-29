@@ -1,39 +1,34 @@
-# 🛒 AI Shopping Assistant
+AI Shopping Assistant
 
 An intelligent conversational shopping assistant powered by **LangChain**, **Groq LLMs**, and **Streamlit**.
 The assistant enables users to search products using natural language or images, apply smart filters, and place orders through an interactive chat interface.
 
----
+Features
 
-# ✨ Features
-
-* 🔍 **Natural Language Product Search**
+* Natural Language Product Search
   Search products conversationally using queries like:
 
   > *“organic honey under $15 with 4+ star ratings”*
 
-* 🖼️ **Image-Based Product Discovery**
+* Image-Based Product Discovery
   Upload a product image and the assistant identifies it using a vision model and recommends similar products.
 
-* 🎯 **Smart Filtering**
+* Smart Filtering
   Filter products by:
 
   * Price
   * Ratings
   * Organic certification
 
-* ⭐ **Live Rating Integration**
+* Live Rating Integration
   Retrieves customer ratings dynamically from the reviews database.
 
-* 🛒 **Conversational Checkout**
+* Conversational Checkout
   Place orders directly through chat interactions.
 
-* 💬 **Modern Streamlit Interface**
+* Modern Streamlit Interface
   Clean and responsive chat-based UI with image upload support.
-
----
-
-# 🏗️ Project Architecture
+Project Architecture
 
 ```text
 User Input (Text / Image)
@@ -52,9 +47,9 @@ User Input (Text / Image)
      SQLite Database
 ```
 
----
 
-# 📁 Project Structure
+
+Project Structure
 
 ```bash
 shopping-agent/
@@ -68,9 +63,8 @@ shopping-agent/
 └── .env                   # Environment variables
 ```
 
----
 
-# ⚙️ Tech Stack
+Tech Stack
 
 | Layer           | Technology         |
 | --------------- | ------------------ |
@@ -83,9 +77,9 @@ shopping-agent/
 
 ---
 
-# 🚀 Getting Started
+Getting Started
 
-## 1️⃣ Clone the Repository
+1. Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/shopping-agent.git
@@ -94,25 +88,23 @@ cd shopping-agent
 
 ---
 
-## 2️⃣ Create a Virtual Environment
+2. Create a Virtual Environment
 
-### Windows
+Windows
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### macOS/Linux
+macOS/Linux
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
----
-
-## 3️⃣ Install Dependencies
+3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -120,7 +112,7 @@ pip install -r requirements.txt
 
 ---
 
-## 4️⃣ Configure Environment Variables
+4. Configure Environment Variables
 
 Create a `.env` file in the project root:
 
@@ -134,7 +126,7 @@ https://console.groq.com
 
 ---
 
-## 5️⃣ Initialize the Database
+5. Initialize the Database
 
 ```bash
 python setup_db.py
@@ -150,7 +142,7 @@ with pre-seeded sample data.
 
 ---
 
-## 6️⃣ Run the Application
+6. Run the Application
 
 ```bash
 streamlit run app.py
@@ -164,7 +156,7 @@ http://localhost:8501
 
 ---
 
-# 💬 Example Queries
+Example Queries
 
 | User Prompt                      | Assistant Action                      |
 | -------------------------------- | ------------------------------------- |
@@ -175,9 +167,9 @@ http://localhost:8501
 
 ---
 
-# 🗄️ Database Schema
+Database Schema
 
-## Products Table
+Products Table
 
 ```sql
 id
@@ -188,7 +180,7 @@ description
 is_organic
 ```
 
-## Reviews Table
+Reviews Table
 
 ```sql
 id
@@ -198,7 +190,7 @@ reviewer_name
 review_text
 ```
 
-## Orders Table
+Orders Table
 
 ```sql
 id
@@ -210,35 +202,35 @@ ordered_at
 
 ---
 
-# 📦 Product Categories
+Product Categories
 
 The demo database includes products across multiple categories:
 
-* 🍯 Honey
-* 🫒 Oils
-* 🥜 Nuts
-* 🌱 Seeds
-* 🌾 Grains
-* 🍵 Tea
-* ☕ Coffee
-* 🍿 Snacks
-* 🥛 Dairy Alternatives
+* Honey
+* Oils
+* Nuts
+* Seeds
+* Grains
+* Tea
+* Coffee
+* Snacks
+* Dairy Alternatives
 
 ---
 
-# 🔐 Environment Variables
+Environment Variables
 
 | Variable       | Description                 | Required |
 | -------------- | --------------------------- | -------- |
-| `GROQ_API_KEY` | API key for Groq LLM access | ✅        |
+| `GROQ_API_KEY` | API key for Groq LLM access | Yes      |
 
 ---
 
-# 🤝 Contributing
+Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
-### Steps to contribute:
+Steps to contribute:
 
 1. Fork the repository
 2. Create a feature branch
@@ -263,13 +255,13 @@ git push origin feature-name
 
 ---
 
-# 📄 License
+License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-# 🌟 Future Improvements
+Future Improvements
 
 * User authentication
 * Personalized recommendations
@@ -280,7 +272,7 @@ This project is licensed under the **MIT License**.
 
 ---
 
-# 👨‍💻 Author
+Author
 
 Developed using:
 
@@ -289,4 +281,4 @@ Developed using:
 * Streamlit
 * Python
 
-If you found this project useful, consider giving it a ⭐ on GitHub!
+If you found this project useful, consider giving it a star on GitHub.
